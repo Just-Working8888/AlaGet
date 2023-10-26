@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/GilroyThin.ttf') format('ttf');
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+    background: #EFEFEF;
+}
+
+.header {
+    z-index: 1111;
+    position: relative;
+    background: #282828;
+}
+
+.header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    position: relative;
+}
+
+.header nav .logo {
+    height: 48px;
+}
+
+.header nav .logo img {
+    height: 100%;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 33px;
+}
+
+.header nav ul li {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    text-transform: uppercase;
+}
+
+.header nav ul .active {
+    color: #F8BF00;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+    text-transform: uppercase;
+}
+
+.mainCarImage {
+    pointer-events: none;
+}
+
+.header nav .translate {
+    color: #FFF;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+    text-transform: uppercase;
+}
+
+.header nav .beTaksist {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #F8BF00;
+    background: rgba(0, 0, 0, 0);
+    padding: 6px 20px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+}
+
+.main {
+
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+
+}
+
+.main .Mainbackround {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    border-radius: 0 0 50px 50px;
+}
+
+.main .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 50px 50px;
+
+}
+
+.main .mainTitle {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.main .mainTitle h1 {
+    color: #282828;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106.4%;
+    /* 51.072px */
+    text-transform: uppercase;
+}
+
+.main .mainTitle h2 {
+    color: #F5F5F5;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106.4%;
+    /* 69.16px */
+    text-transform: uppercase;
+}
+
+.main .mainTitle h3 {
+    color: #282828;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 34.048px */
+}
+
+.main .mainTitle .mainButton {
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    padding: 16px 35px;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    text-align: center;
+    width: fit-content;
+    /* 25.536px */
+    text-transform: uppercase;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    padding: 6% 0;
+}
+
+.service .serviceItem {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    height: 55px;
+
+}
+
+.service .serviceItem p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+    /* 21.6px */
+}
+
+.swiper-container {
+    width: 100%;
+
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.aboutAppCard {
+    border-radius: 45px;
+    background: #FFF;
+    padding: 45px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutAppCard .aboutCardLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.aboutAppCard .aboutCardLeft h1 {
+    color: #F8BF00;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.aboutAppCard .aboutCardLeft .slideNum {
+    border-radius: 16px;
+    border: 2px solid #FCC020;
+    padding: 10px 16px;
+    width: fit-content;
+}
+
+.aboutAppCard .aboutCardLeft .slideNum h1 {
+    color: #363636;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106.4%;
+    /* 29.792px */
+}
+
+.slideNumTitle {
+    color: #282828;
+    font-size: 28px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 29.792px */
+}
+
+.aboutAppCard .aboutCardLeft .slideNum p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 25.536px */
+}
+
+.aboutAppCard .aboutCardLeft h2 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+}
+
+.aboutAppCard .aboutCardRight .aboutCardImage {
+    border-radius: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutAppCard .aboutCardRight {
+    width: 100%;
+}
+
+.aboutAppCard .aboutCardLeft {
+    width: 100%;
+}
+
+
+.aboutAppCard .aboutCardRight .aboutCardImage img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.downloadApp {
+    padding: 60px 0;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.downloadApp h1 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.downloadAppLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.downloadApp p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 25.536px */
+}
+
+.downloadApp .downloadAppRight img {
+    width: 100%;
+}
+
+.orangeBGbutton {
+    width: fit-content;
+    border-radius: 15px;
+    background: #F5B324;
+    padding: 16px 35px;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 25.536px */
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+.Proof {
+    border-radius: 65px;
+    background: #FFF;
+    padding: 69px;
+}
+
+.Proof .ProofContiner {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.Proof .ProofContiner h1 {
+    color: #282828;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.Proof .ProofContiner .proofList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.Proof .ProofContiner .proofList .proofListItem {
+    border-radius: 40px;
+    border: 2px solid #D9D9D9;
+    padding: 36px;
+    height: 50vh;
+    width: 30vw;
+    flex: 1 1 190px;
+}
+
+.Proof .ProofContiner .proofList .proofListItem .proofItemTop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Proof .ProofContiner .proofList .proofListItem .proofItemTop h1 {
+    color: #282828;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 95%;
+    /* 34.2px */
+}
+
+.Proof .ProofContiner .proofList .proofListItem .proofItemTop img {
+    width: 85px;
+    object-fit: contain;
+}
+
+.proofItemMain p {
+    color: #282828;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 25.536px */
+}
+
+
+.preFooter {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 85px 0;
+}
+
+.preFooter .preFooterLeft p {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 31.92px */
+}
+
+.preFooter .preFooterLeft p u {
+    color: #F8BF00;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+}
+
+.preFooter .preFooterRigth .preFooterImage {
+    width: 325px;
+    height: 325px;
+    overflow: hidden;
+}
+
+.preFooter .preFooterRigth .preFooterImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    border-radius: 50px 50px 0px 0px;
+    background: #282828;
+    padding: 40px;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 19.152px */
+}
+
+.footer .footerContainer {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer .footerContainer nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footerContainer nav ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    list-style: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 17.024px */
+    text-transform: uppercase;
+}
+
+.footer .footerContainer nav .socialMedia {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer .footerContainer nav .socialMedia .iconItem {
+    border-radius: 10px;
+    border: 1px solid #F8BF00;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+}
+
+.footer .footerContainer nav .socialMedia .iconItem p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 17.024px */
+}
+
+.footer .footerContainer nav .socialMedia .iconItem img {
+    width: 44px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer .footerContainer .lust {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
+.mobile-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #282828;
+    text-align: center;
+    opacity: 0;
+    z-index: 20;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mobile-menu.open {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.burger-wrap {
+    display: none;
+    position: absolute;
+    z-index: 40;
+    transition: 300ms 700ms transform ease-in;
+}
+
+.burger-wrap.reappearBurger {
+    opacity: 0;
+    animation: 0.5s 2s fadeAppear ease-out forwards;
+}
+
+.mobile-menu nav ul {
+    margin: 0 auto;
+}
+
+@keyframes fadeAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.burger {
+    width: 30px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 30;
+    transition: transform 1s ease-in;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+    top: 0px;
+    width: 50%;
+}
+
+.burger span:nth-child(2) {
+    top: 12px;
+    width: 75%;
+}
+
+.burger span:nth-child(3) {
+    top: 24px;
+    width: 100%;
+}
+
+.burger.active span:nth-child(1) {
+    width: 100%;
+    top: 12px;
+    transform: rotate(135deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+}
+
+
+@media(max-width:1245px) {
+
+    .main .Mainbackround {
+        height: 120vh;
+    }
+
+    .main .overlay {
+        height: 120vh;
+    }
+
+    .main .overlay {
+        display: block;
+    }
+
+    .downloadApp {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .downloadApp button {
+        margin: 0 auto;
+    }
+
+    .mainCarImage {
+        z-index: -1;
+        position: absolute;
+        right: 0;
+    }
+
+    .main .mainTitle h1,
+    h3 {
+        color: #D9D9D9;
+    }
+
+    .main .mainTitle h3 {
+        color: #D9D9D9;
+    }
+
+
+
+}
+
+@media(max-width:830px) {
+    .main .Mainbackround {
+        height: 100vh;
+    }
+    
+    .main .overlay {
+        height: 100vh;
+    }
+    .preFooter {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+
+    .aboutAppCard {
+        height: 50%;
+        flex-direction: column-reverse;
+    }
+
+    .proofList {
+        flex-direction: column;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem {
+        width: 100%;
+    }
+
+    .aboutCardLeft {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .slideNum {
+        margin: 0 auto;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .mainCarImage {
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        position: relative;
+
+    }
+
+    .mainCarImage img {
+        position: absolute;
+        width: 100%;
+    }
+
+    .preFooterRigth {
+
+        margin: 0 auto;
+    }
+
+    .service {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .mainTitle {
+        height: 90%;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:770px) {
+    .main .Mainbackround {
+        height: 95vh;
+    }
+
+    .main .overlay {
+        height: 95vh;
+    }
+
+    .header nav .desc {
+        display: none;
+    }
+
+    .burger-wrap {
+        display: block;
+    }
+
+    .footer .footerContainer nav ul {
+        flex-wrap: wrap;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem .proofItemTop {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem {
+        height: fit-content;
+    }
+}
+
+@media(max-width:571px) {
+    .service .serviceItem {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .main .mainTitle h1 {
+        font-size: 38px;
+    }
+
+    .main .mainTitle h2 {
+        font-size: 55px;
+    }
+
+    .main .mainTitle h2 {
+        font-size: 22px;
+    }
+
+    .Proof {
+        padding: 0;
+    }
+    .main .Mainbackround {
+        height: 100vh;
+    }
+    
+    .main .overlay {
+        height: 100vh;
+    }
+    .Proof .ProofContiner .proofList .proofListItem .proofItemTop h1 {
+        font-size: 26px;
+    }
+    .main .mainTitle h1{
+        font-size: 28px;
+    }
+    .main .mainTitle h3{
+        font-size: 22px;
+    }
+    .preFooter .preFooterRigth .preFooterImage {
+        width: 100%;
+        height: fit-content;
+    }
+}
